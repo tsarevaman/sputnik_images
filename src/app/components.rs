@@ -1,4 +1,5 @@
 use eframe::egui;
+use crate::processor::color;
 
 pub fn show_band_selector(ui: &mut egui::Ui, label: &str, selected_path: &mut Option<std::path::PathBuf>, available_tiffs: &[std::path::PathBuf]) {
     // Безопасно получаем имя файла для отображения в кнопке списка
